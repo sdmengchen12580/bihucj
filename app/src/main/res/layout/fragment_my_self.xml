@@ -1,0 +1,530 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown"
+    tools:context="com.aganyun.acode.ui.fra.myself.MySelfFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--黑色留白-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20dp"
+            android:background="@color/black" />
+
+        <!--头像-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_190dp"
+            android:background="@drawable/myseiffra_user_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_user_icon"
+                android:layout_width="@dimen/_70dp"
+                android:layout_height="@dimen/_70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_42dp"
+                android:src="@drawable/img_user_icon" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17dp" />
+
+        </LinearLayout>
+
+        <!--糖果数量-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_69dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <!--今日获得糖果-->
+            <LinearLayout
+                android:id="@+id/ll_today_suger"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_today_suger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/tx_color_1A1A1A"
+                    android:textSize="@dimen/_17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:text="今日获得糖果"
+                    android:textColor="@color/tx_color_666666"
+                    android:textSize="@dimen/_12dp" />
+            </LinearLayout>
+
+            <!--糖果库-->
+            <LinearLayout
+                android:id="@+id/ll_my_suger"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_my_suger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/tx_color_1A1A1A"
+                    android:textSize="@dimen/_17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:text="我的糖果库"
+                    android:textColor="@color/tx_color_666666"
+                    android:textSize="@dimen/_12dp" />
+            </LinearLayout>
+
+            <!--签到拿糖果-->
+            <LinearLayout
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_signin_get_suger"
+                    android:layout_width="95dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:background="@drawable/bt_xml_15radiu_orangesolid"
+                    android:padding="@dimen/_0dp"
+                    android:text="签到拿糖果"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--邀请1级好友-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:text="邀请一级好友 +688"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textSize="@dimen/_15dp" />
+
+            <ImageView
+                android:layout_width="@dimen/_15dp"
+                android:layout_height="@dimen/_15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_toRightOf="@+id/tv1"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_b" />
+
+            <LinearLayout
+                android:id="@+id/ll_top1"
+                android:layout_width="@dimen/_44dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_more1"
+                    android:layout_width="@dimen/_14dp"
+                    android:layout_height="@dimen/_8dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_bottom" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_friend1"
+                android:layout_width="@dimen/_70dp"
+                android:layout_height="@dimen/_30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ll_top1"
+                android:background="@drawable/bt_xml_15rad_0solid_1storke"
+                android:text="邀请好友"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/_12dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_more1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_22dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_15dp"
+            android:text="邀请一级好友下载APP并登陆成功,奖励688糖果"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_12dp"
+            android:visibility="gone" />
+
+        <!--邀请2级好友-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginTop="@dimen/_1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:text="邀请二级好友 +68"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textSize="@dimen/_15dp" />
+
+            <ImageView
+                android:layout_width="@dimen/_15dp"
+                android:layout_height="@dimen/_15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_b" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_top2"
+                android:layout_width="@dimen/_44dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_more2"
+                    android:layout_width="@dimen/_14dp"
+                    android:layout_height="@dimen/_8dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_bottom" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_friend2"
+                android:layout_width="@dimen/_70dp"
+                android:layout_height="@dimen/_30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ll_top2"
+                android:background="@drawable/bt_xml_15rad_0solid_1storke"
+                android:text="邀请好友"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/_12dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_more2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_22dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_15dp"
+            android:text="你邀请的好友每次邀请他人成功,你再获得68个糖果"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_12dp"
+            android:visibility="gone" />
+
+        <!--分享资讯或快讯等 +588-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginTop="@dimen/_1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:text="分享资讯和快讯 +30"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textSize="@dimen/_15dp" />
+
+            <ImageView
+                android:layout_width="@dimen/_15dp"
+                android:layout_height="@dimen/_15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_toRightOf="@+id/tv3"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_b" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_top3"
+                android:layout_width="@dimen/_44dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_more3"
+                    android:layout_width="@dimen/_14dp"
+                    android:layout_height="@dimen/_8dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_bottom" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_friend3"
+                android:layout_width="@dimen/_70dp"
+                android:layout_height="@dimen/_30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ll_top3"
+                android:background="@drawable/bt_xml_15rad_0solid_1storke"
+                android:text="立即分享"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/_12dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_more3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_22dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_15dp"
+            android:text="每天6篇，每篇5个糖果"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_12dp"
+            android:visibility="gone" />
+
+        <!--阅读资讯信息 +10-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginTop="@dimen/_1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:text="阅读资讯信息 +25"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textSize="@dimen/_15dp" />
+
+            <ImageView
+                android:layout_width="@dimen/_15dp"
+                android:layout_height="@dimen/_15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_toRightOf="@+id/tv4"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_b" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_top4"
+                android:layout_width="@dimen/_44dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_more4"
+                    android:layout_width="@dimen/_14dp"
+                    android:layout_height="@dimen/_8dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_bottom" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_friend4"
+                android:layout_width="@dimen/_70dp"
+                android:layout_height="@dimen/_30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ll_top4"
+                android:background="@drawable/bt_xml_15rad_0solid_1storke"
+                android:text="立即阅读"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/_12dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_more4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_22dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_15dp"
+            android:text="每天5篇，每篇随机1-5糖果"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_12dp"
+            android:visibility="gone" />
+
+        <!--修改手机号-->
+        <RelativeLayout
+            android:id="@+id/rv_fix_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/fix_phone_num"
+                android:layout_width="@dimen/_14dp"
+                android:layout_height="@dimen/_14dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:src="@drawable/img_fix_phone_num" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_toRightOf="@+id/fix_phone_num"
+                android:text="@string/_str_fix_phone_num"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textSize="@dimen/_15dp" />
+
+            <ImageView
+                android:id="@+id/more1"
+                android:layout_width="@dimen/_8dp"
+                android:layout_height="@dimen/_14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15dp"
+                android:src="@drawable/img_more" />
+
+
+            <TextView
+                android:id="@+id/tv_fix_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15dp"
+                android:layout_toLeftOf="@+id/more1"
+                android:text="@string/_str_fix_phone_num"
+                android:textColor="@color/tx_color_666666"
+                android:textSize="@dimen/_15dp" />
+
+        </RelativeLayout>
+
+        <!--关于我们-->
+        <RelativeLayout
+            android:id="@+id/rv_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginTop="@dimen/_1dp"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:id="@+id/about_us"
+                android:layout_width="@dimen/_14dp"
+                android:layout_height="@dimen/_14dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:src="@drawable/img_about_us" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_toRightOf="@+id/about_us"
+                android:text="@string/_str_about_us"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textSize="@dimen/_15dp" />
+
+            <ImageView
+                android:layout_width="@dimen/_8dp"
+                android:layout_height="@dimen/_14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15dp"
+                android:src="@drawable/img_more" />
+        </RelativeLayout>
+
+        <!--推荐好友-->
+        <RelativeLayout
+            android:id="@+id/rv_suggest_friend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginTop="@dimen/_1dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/suggest_friend"
+                android:layout_width="@dimen/_14dp"
+                android:layout_height="@dimen/_14dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:src="@drawable/img_suggest_friend" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_toRightOf="@+id/suggest_friend"
+                android:text="@string/_str_suggest_friend"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textSize="@dimen/_15dp" />
+
+            <ImageView
+                android:layout_width="@dimen/_8dp"
+                android:layout_height="@dimen/_14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15dp"
+                android:src="@drawable/img_more" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tv_exit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_30dp"
+            android:background="@drawable/bt_xml_20radiues_orange_solid"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18dp" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

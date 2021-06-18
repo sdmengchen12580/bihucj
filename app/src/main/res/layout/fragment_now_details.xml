@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown"
+    android:orientation="vertical"
+    tools:context="com.aganyun.acode.ui.fra.nowdetails.NowDetailsFragment">
+
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_68dp"
+        android:background="@color/theme_color"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_24dp">
+
+        <TextView
+            android:id="@+id/tv_title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/_20dp"
+            android:text="@string/_str_now_details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17dp" />
+
+
+    </RelativeLayout>
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45dp"
+        android:background="@color/white"
+        app:xTabPaddingStart="@dimen/_5dp"
+        app:xTabPaddingEnd="@dimen/_5dp"
+        android:paddingTop="@dimen/_10dp"
+        app:tabPaddingEnd="-1dp"
+        app:tabPaddingStart="-1dp"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabIndicatorColor="@color/indicator_color"
+        app:xTabMode="scrollable"
+        app:xTabSelectedTextColor="@color/tx_color_1A1A1A"
+        app:xTabTextAppearance="@style/TabLayoutTextStyle"
+        app:xTabTextBold="true"
+        app:xTabTextColor="@color/tx_color_666666" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tx_alpha_orange"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_15dp"
+            android:text="@string/_str_deal_address"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_12dp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tx_alpha_orange"
+            android:gravity="center"
+            android:text="@string/_str_now_sold_num"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_12dp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tx_alpha_orange"
+            android:gravity="center"
+            android:text="@string/_str_change_money_type"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_12dp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tx_alpha_orange"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/_15dp"
+            android:text="@string/_str_24h_change"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_12dp" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_now_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_1dp"
+        android:background="@color/white" />
+
+
+</LinearLayout>

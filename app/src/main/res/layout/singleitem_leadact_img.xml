@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/id_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/bt_now_use"
+        android:padding="@dimen/_0dp"
+        android:layout_width="@dimen/_75dp"
+        android:layout_height="@dimen/_25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/leadact_xml_img_user_mode"
+        android:text="@string/_str_now_use"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13dp" />
+
+</FrameLayout>

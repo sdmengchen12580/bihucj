@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="106dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_single_homenews"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_105dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/_15dp"
+                android:paddingRight="@dimen/_15dp"
+                android:text="@string/_text_content"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textSize="@dimen/_16dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_15dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15dp"
+                    android:text="壹码"
+                    android:textColor="@color/tx_color_666666"
+                    android:textSize="@dimen/_11dp"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:id="@+id/tv_has_looked_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:text="66"
+                    android:textColor="@color/tx_color_666666"
+                    android:textSize="@dimen/_11dp" />
+
+                <TextView
+                    android:id="@+id/has_looked_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_has_looked_num"
+                    android:text="人浏览"
+                    android:textColor="@color/tx_color_666666"
+                    android:textSize="@dimen/_11dp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_toRightOf="@+id/has_looked_num"
+                    android:text="2018-07-05 11:11"
+                    android:textColor="@color/tx_color_666666"
+                    android:textSize="@dimen/_11dp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_news"
+            android:layout_width="@dimen/_110dp"
+            android:layout_height="@dimen/_75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_15dp"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_brown_bg_tv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_marginRight="@dimen/_15dp"
+        android:background="@color/dark_brown" />
+
+</LinearLayout>

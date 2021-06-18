@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aganyun.acode.ui.act.other.AllSugerActivity">
+
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_68dp"
+        android:background="@color/theme_color"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_24dp">
+
+        <LinearLayout
+            android:id="@+id/ll_web_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_9dp"
+                android:layout_height="@dimen/_15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/img_back" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/_20dp"
+            android:text="我的糖果"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17dp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/brown" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

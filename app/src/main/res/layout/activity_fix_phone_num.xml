@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aganyun.acode.ui.act.fixinfo.FixPhoneNumActivity">
+
+    <!--标题-->
+    <RelativeLayout
+        android:paddingTop="@dimen/_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_68dp"
+        android:background="@color/theme_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_fix_phone_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_9dp"
+                android:layout_height="@dimen/_15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/img_back" />
+        </LinearLayout>
+
+
+        <TextView
+            android:paddingTop="@dimen/_20dp"
+            android:id="@+id/tv_title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/_str_fix_phone_num"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17dp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/brown"
+        android:orientation="vertical">
+
+        <!--手机号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_54dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:gravity="center"
+                android:text="手机号"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textSize="@dimen/_15dp" />
+
+            <EditText
+                android:id="@+id/et_input_name"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:hint="请输入新手机号"
+                android:maxLines="1"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textColorHint="@color/tx_color_999999"
+                android:textSize="@dimen/_15dp" />
+
+            <ImageView
+                android:id="@+id/img_input_name_delect"
+                android:layout_width="@dimen/_14dp"
+                android:layout_height="@dimen/_14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_15dp"
+                android:src="@drawable/img_x"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!--验证码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_54dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:gravity="center"
+                android:text="验证码"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textSize="@dimen/_15dp" />
+
+            <EditText
+                android:id="@+id/et_input_power_code"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:hint="请输入验证码"
+                android:maxLines="1"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textColorHint="@color/tx_color_999999"
+                android:textSize="@dimen/_15dp" />
+
+            <Button
+                android:id="@+id/bt_send_power_code"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_15dp"
+                android:background="@drawable/bt_xml_15radiues_orange_solid"
+                android:padding="@dimen/_0dp"
+                android:text="发送验证码"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/_12dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tv_fix_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_30dp"
+            android:background="@drawable/bt_xml_20radiues_orange_solid"
+            android:text="@string/_str_fix_phone_num"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18dp" />
+
+    </LinearLayout>
+</LinearLayout>

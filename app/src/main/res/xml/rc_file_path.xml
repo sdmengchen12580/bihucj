@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--下载安装包-->
+    <external-path
+        name="download"
+        path="" />
+
+
+    <!--目录给共享-->
+    <!--<files-path/>代表的根目录：[Context.getFilesDir()]-->
+    <!--<external-path/>代表的根目录: [Environment.getExternalStorageDirectory()]-->
+    <!--<cache-path/>代表的根目录: [getCacheDir()]-->
+    <!--https://blog.csdn.net/xqkillua/article/details/79114385-->
+
+</paths>

@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aganyun.acode.ui.fra.quicknews.QuickNewsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/theme_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44dp"
+        android:background="@color/title_bg_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/homeact_search_ll_14radius"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_12dp"
+                android:layout_height="@dimen/_12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:src="@drawable/homeact_title_search_img" />
+
+            <TextView
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/_search_main_words"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/tx_color_333333"
+                android:textColorHint="@color/tx_color_999999"
+                android:textSize="@dimen/_13dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17dp" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_quicknews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="220dp"
+    android:background="@drawable/ll_10radiues_white_solid"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45dp"
+        android:background="@drawable/tv_xml_top_10radiues"
+        android:gravity="center"
+        android:text="提示"
+        android:textColor="@color/tx_color_1A1A1A"
+        android:textSize="@dimen/_16dp"
+        android:textStyle="bold" />
+
+    <include
+        layout="@layout/include_brown_bg_tv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55dp"
+        android:gravity="center"
+        android:text="发现新版本"
+        android:textColor="@color/tx_color_1A1A1A"
+        android:textSize="@dimen/_16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_update_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="此次更新了重此次更新了重大bug大bug"
+            android:textColor="@color/light_red_color" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_brown_bg_tv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="@dimen/_70dp"
+            android:layout_height="@dimen/_30dp"
+            android:background="@drawable/bt_xml_15radiu_brownsolid"
+            android:padding="@dimen/_0dp"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15dp" />
+
+        <Button
+            android:id="@+id/bt_true"
+            android:layout_width="@dimen/_70dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:background="@drawable/bt_xml_15radiu_orangesolid"
+            android:padding="@dimen/_0dp"
+            android:text="更新"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:lee="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.aganyun.acode.ui.act.search.SearchActivity">
+
+    <include
+        layout="@layout/searchact_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_64dp" />
+
+    <!--搜索历史-->
+    <LinearLayout
+        android:id="@+id/ll_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:gravity="center_vertical"
+                android:text="@string/_str_search_history"
+                android:textColor="@color/tx_color_333333"
+                android:textSize="@dimen/_13dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_delect_search_history"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_width="@dimen/_13dp"
+                    android:layout_height="@dimen/_14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_15dp"
+                    android:src="@drawable/img_delect_search_history" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.aganyun.acode.view.RecoderViewGroup
+            android:paddingTop="@dimen/_2dp"
+            android:id="@+id/recoder_vg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            lee:tagVerticalSpace="@dimen/_10dp"
+            lee:tagHorizontalSpace="@dimen/_15dp" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_search_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:text="没找到您想要的内容"
+                android:textSize="15.5dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="#999999"
+                android:id="@+id/tv_has_no_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

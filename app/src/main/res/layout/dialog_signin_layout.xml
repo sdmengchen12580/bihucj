@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="205dp"
+    android:background="@drawable/view_15radius_shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:gravity="center"
+        android:text="@string/_str_signin"
+        android:textColor="@color/tx_color_1A1A1A"
+        android:textSize="@dimen/_17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_dotted_line"
+        android:layerType="software" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_marginRight="@dimen/_15dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <com.aganyun.acode.view.signin.CustomViews
+            android:id="@+id/circle1"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp" />
+
+        <TextView
+            android:id="@+id/tv_line1"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@color/signin_text_and_strock_no_singned" />
+
+
+        <com.aganyun.acode.view.signin.CustomViews
+            android:id="@+id/circle2"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp" />
+
+        <TextView
+            android:id="@+id/tv_line2"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@color/signin_text_and_strock_no_singned" />
+
+        <com.aganyun.acode.view.signin.CustomViews
+            android:id="@+id/circle3"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"/>
+
+        <TextView
+            android:id="@+id/tv_line3"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@color/signin_text_and_strock_no_singned" />
+
+        <com.aganyun.acode.view.signin.CustomViews
+            android:id="@+id/circle4"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"/>
+
+        <TextView
+            android:id="@+id/tv_line4"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@color/signin_text_and_strock_no_singned" />
+
+        <com.aganyun.acode.view.signin.CustomViews
+            android:id="@+id/circle5"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"/>
+
+        <TextView
+            android:id="@+id/tv_line5"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@color/signin_text_and_strock_no_singned" />
+
+        <com.aganyun.acode.view.signin.CustomViews
+            android:id="@+id/circle6"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp" />
+
+        <TextView
+            android:id="@+id/tv_line6"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@color/signin_text_and_strock_no_singned" />
+
+        <com.aganyun.acode.view.signin.CustomViews
+            android:id="@+id/circle7"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_marginRight="@dimen/_15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/_str_day1"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_11dp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/_str_day2"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_11dp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/_str_day3"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_11dp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/_str_day4"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_11dp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/_str_day5"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_11dp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/_str_day6"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_11dp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/_str_day7"
+            android:textColor="@color/tx_color_666666"
+            android:textSize="@dimen/_11dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_signin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginBottom="@dimen/_15dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_marginRight="@dimen/_15dp"
+        android:background="@drawable/bt_xml_20radiues_orange_solid"
+        android:text="@string/_str_signin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18dp" />
+
+</LinearLayout>

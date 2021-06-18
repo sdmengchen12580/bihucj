@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aganyun.acode.ui.act.other.WebShareActivity">
+
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_64dp"
+        android:background="@color/theme_color"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_20dp">
+
+        <LinearLayout
+            android:id="@+id/ll_web_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_9dp"
+                android:layout_height="@dimen/_15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/img_back" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/_20dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17dp" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0dp"
+        android:layout_weight="1">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_plus_suger"
+            android:layout_width="@dimen/_113dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_xml_15radiu_orangesolid"
+            android:gravity="center"
+            android:padding="@dimen/_0dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13dp" />
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/framelayout_timer"
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_70dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/_76dp"
+            android:layout_marginRight="@dimen/_15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_timer" />
+
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/_13dp"
+                android:textColor="@color/tx_color_1A1A1A"
+                android:textSize="@dimen/_12dp"
+                android:text="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+
+
+    <include
+        layout="@layout/include_brown_bg_tv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_49dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_share"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:background="@drawable/bt_xml_20radiues_orange_solid"
+            android:text="分享获得糖果"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

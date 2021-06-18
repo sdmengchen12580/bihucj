@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_single_item"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_15dp">
+
+        <ImageView
+            android:id="@+id/img_bi"
+            android:layout_width="@dimen/_10dp"
+            android:layout_height="@dimen/_10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_bi" />
+
+        <TextView
+            android:id="@+id/tv_bi_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3dp"
+            android:textColor="@color/tx_color_1A1A1A"
+            android:textSize="@dimen/_12dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bi_money"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_3dp"
+        android:layout_weight="0.9"
+        android:gravity="center"
+        android:textColor="@color/tx_color_1A1A1A"
+        android:textSize="@dimen/_12dp" />
+
+    <TextView
+        android:id="@+id/tv_bi_change_type"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_3dp"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:textColor="@color/tx_color_1A1A1A"
+        android:textSize="@dimen/_12dp" />
+
+    <TextView
+        android:id="@+id/tv_bi_24h_change"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_3dp"
+        android:layout_weight="0.9"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/_15dp"
+        android:textColor="@color/tx_color_1A1A1A"
+        android:textSize="@dimen/_12dp" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:paddingTop="@dimen/_20dp"
+    android:id="@+id/ll_search_layout"
+    android:background="@color/title_bg_color"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_back"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_9dp"
+            android:layout_height="@dimen/_15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:src="@drawable/img_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_28dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.73"
+        android:background="@drawable/homeact_search_ll_14radius"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_12dp"
+            android:layout_height="@dimen/_12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:src="@drawable/homeact_title_search_img" />
+
+        <EditText
+            android:id="@+id/et_search_content"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="@string/_search_main_words"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/tx_color_333333"
+            android:textColorHint="@color/tx_color_999999"
+            android:textSize="@dimen/_13dp" />
+
+        <ImageView
+            android:id="@+id/img_delect"
+            android:layout_width="@dimen/_14dp"
+            android:layout_height="@dimen/_14dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_10dp"
+            android:src="@drawable/img_delect_search_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.17"
+        android:gravity="center"
+        android:text="搜索"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17dp" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aganyun.acode.ui.act.HomeActivity">
+
+    <com.aganyun.acode.view.ViewPagerSlide
+        android:id="@+id/vp_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <include
+        layout="@layout/include_brown_bg_tv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/dark_brown" />
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tab_bottom_title"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        tl:tl_iconHeight="@dimen/_21dp"
+        tl:tl_iconWidth="@dimen/_21dp"
+        tl:tl_indicator_height="0dp"
+        tl:tl_textSelectColor="@color/tx_color_1A1A1A"
+        tl:tl_textUnselectColor="@color/tx_color_666666"
+        tl:tl_textsize="@dimen/_10dp"
+        tl:tl_underline_color="#DDDDDD" />
+
+</LinearLayout>

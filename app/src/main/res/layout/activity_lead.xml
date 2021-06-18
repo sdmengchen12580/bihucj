@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aganyun.acode.ui.act.LeadActivity">
+
+    <com.aganyun.acode.utils.vpchange.MyViewPager
+        android:id="@+id/vp_lead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_point"
+        android:layout_width="@dimen/_41dp"
+        android:layout_height="@dimen/_25dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.aganyun.acode.view.SmallCircleView
+            android:id="@+id/circle1"
+            android:layout_width="@dimen/_7dp"
+            android:layout_height="@dimen/_7dp"
+            mc:mSolidColor="@color/leadact_img_now_user_bg" />
+
+        <com.aganyun.acode.view.SmallCircleView
+            android:id="@+id/circle2"
+            android:layout_width="@dimen/_7dp"
+            android:layout_height="@dimen/_7dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            mc:mSolidColor="@color/white" />
+
+        <com.aganyun.acode.view.SmallCircleView
+            android:id="@+id/circle3"
+            android:layout_width="@dimen/_7dp"
+            android:layout_height="@dimen/_7dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            mc:mSolidColor="@color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_jump"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_20dp"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/_20dp"
+        android:background="@drawable/leadact_bt_xml_jump_bg"
+        android:text="@string/_str_jump"
+        android:textColor="@color/leadact_img_jump_bg"
+        android:textSize="@dimen/_11dp" />
+
+</FrameLayout>

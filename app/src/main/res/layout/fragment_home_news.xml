@@ -1,0 +1,61 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aganyun.acode.ui.fra.home.HomeNewsFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/shuffing_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180dp">
+
+                <com.jude.rollviewpager.RollPagerView
+                    android:id="@+id/homenewfra_shuffinf"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_180dp"
+                    app:rollviewpager_play_delay="3000" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_shuffinf_content"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_30dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_marginBottom="@dimen/_30dp"-->
+                <!--android:background="#90000000"-->
+                <!--android:ellipsize="end"-->
+                <!--android:gravity="center"-->
+                <!--android:maxLines="1"-->
+                <!--android:text="5G商用冲刺：芯片厂商竞争激烈 技术难点仍在"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/_17dp" />-->
+            </FrameLayout>
+
+            <include
+                layout="@layout/include_brown_bg_tv_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10dp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_homenewfra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

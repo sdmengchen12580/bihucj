@@ -1,0 +1,134 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion var.compileSdkVersion
+    defaultConfig {
+        applicationId "com.aganyun.acode"
+        minSdkVersion var.minSdkVersion
+        targetSdkVersion var.targetSdkVersion
+        versionCode var.versionCode
+        versionName var.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "default"
+
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: "com.aganyun.acode",
+                JPUSH_APPKEY : "1ea99ea55103d354f98b517c",
+                JPUSH_CHANNEL: "developer-default",
+        ]
+    }
+
+    productFlavors {
+        wandoujia {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
+        }
+        weibo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "weibo"]
+        }
+        weixin {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "weixin"]
+        }
+        shequn {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "shequn"]
+        }
+        guanfang {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "guanfang"]
+        }
+        jifeng {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "jifeng"]
+        }
+        huawei {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei"]
+        }
+        the360 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "the360"]
+        }
+        xiaomi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+        }
+        baidu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+        }
+        yingyongbao {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyongbao"]
+        }
+        oppo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "oppo"]
+        }
+        meizu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "meizu"]
+        }
+        leshop {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "leshop"]
+        }
+        pphelper {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "pphelper"]
+        }
+        share {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "share"]
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('acode.jks')
+            storePassword "acode123"
+            keyAlias "acode"
+            keyPassword "acode123"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.androidkun:XTabLayout:1.1.3'
+    implementation project(':tablayoutlibrary')
+    implementation files('libs/utdid4all-1.1.5.3_proguard.jar')
+    implementation files('libs/umeng-sharetool-6.9.3.jar')
+    implementation files('libs/umeng-shareboard-widget-6.9.3.jar')
+    implementation files('libs/umeng-share-wechat-simplify-6.9.3.jar')
+    implementation files('libs/umeng-share-sina-simplify-6.9.3.jar')
+    implementation files('libs/umeng-share-QQ-simplify-6.9.3.jar')
+    implementation files('libs/umeng-share-core-6.9.3.jar')
+    implementation files('libs/umeng-common-1.5.3.jar')
+    implementation files('libs/SecurityEnvSDK-release-1.1.0.jar')
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'cn.jiguang.sdk:jpush:3.1.1'
+    implementation 'cn.jiguang.sdk:jcore:1.1.9'
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/zxing.jar')
+    /**沉浸式*/
+    implementation('com.jaeger.statusbarutil:library:1.5.1') {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+//    implementation 'com.umeng.sdk:common:latest.integration'
+//    implementation 'com.umeng.sdk:analytics:latest.integration'
+}

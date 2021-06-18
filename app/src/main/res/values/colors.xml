@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F98040</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="translate">#00FFFFFF</color>
+    <color name="theme_color">#3A87F7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#1DA439</color>
+    <color name="black">#000000</color>
+    <color name="brown">#F5F5F5</color>
+    <color name="brown_bg">#edecec</color>
+    <color name="dark_brown">#e4e3e3</color>
+    <color name="title_bg_color">#3A87F7</color>
+    <color name="tx_color_999999">#999999</color>
+    <color name="tx_color_010101">#010101</color>
+    <color name="tx_color_1A1A1A">#1A1A1A</color>
+    <color name="tx_alpha_orange">#FFF9E5</color>
+    <color name="tx_color_666666">#666666</color>
+    <color name="tx_color_242335">#242335</color>
+    <color name="tx_color_333333">#333333</color>
+    <color name="indicator_color">#3A87F7</color>
+    <color name="share_text_code_color">#FCE7A7</color>
+    <color name="light_red_color">#f22f46</color>
+    <color name="red">#FF3333</color>
+    <color name="green_text">#23B04B</color>
+    <color name="leadact_img_now_user_bg">#3A87F7</color>
+    <color name="leadact_img_now_user_text_color">#212033</color>
+    <color name="leadact_img_jump_bg">#EFF3FC</color>
+    <color name="share_bottom_text_color">#595959</color>
+    <color name="share_bottom_blue_text_color">#00648E</color>
+    <color name="signin_solid_singned">#FFC41A</color>
+    <color name="signin_solid_no_singned">#F2F2F2</color>
+    <color name="signin_text_and_strock_no_singned">#CCCCCC</color>
+
+
+</resources>

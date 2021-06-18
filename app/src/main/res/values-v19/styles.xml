@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--首页主题背景-->
+    <style name="Theme.start" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/img_lead1</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!--main沉浸-->
+    <style name="Theme.translatebar" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>
